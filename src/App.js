@@ -1,12 +1,21 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import './App.css'
 
 import DonutLargeIcon from '@material-ui/icons/DonutLarge'
 import ChatIcon from '@material-ui/icons/Chat'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
 import SearchIcon from '@material-ui/icons/Search'
 
+import ChatListItem from './components/ChatListItem'
+
 export default () => {
+
+  const state = {
+    chatlist: [
+      "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty"
+    ]
+  }
+
   return (
     <div className="window">
       <div className="sidebar">
@@ -33,13 +42,18 @@ export default () => {
         </div>
 
         <div className="chat-list">
-          ...
+          {state.chatlist.map((item, key) => (
+            <ChatListItem 
+              key={key}
+              item={item}
+            />
+          ))}
         </div>
       </div>
 
       <div className="content">
-        ...
+            
       </div>
     </div>
-  );
+  )
 }

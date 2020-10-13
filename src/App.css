@@ -74,6 +74,11 @@ header {
   margin-left: 10px;
 }
 
+.chat-list {
+  flex: 1;
+  background-color: #FFF;
+  overflow: auto;
+}
 .content {
 
 }
