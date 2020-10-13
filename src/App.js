@@ -7,11 +7,20 @@ import MoreVertIcon from '@material-ui/icons/MoreVert'
 import SearchIcon from '@material-ui/icons/Search'
 
 import ChatListItem from './components/ChatListItem'
+import ChatIntro from './components/ChatIntro'
 
 export default () => {
 
   const state = {
     chatlist: [
+      "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty",
+
+      "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty",
+
+      "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty",
+
+      "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty",
+
       "Fala brod", "Eaeee manin", "Flw mano", "img elements must have an alt prop, either with meaningful text, or an empty"
     ]
   }
@@ -52,7 +61,7 @@ export default () => {
       </div>
 
       <div className="content">
-            
+          <ChatIntro />
       </div>
     </div>
   )
